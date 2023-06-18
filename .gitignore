@@ -1,3 +1,4 @@
 node_modules
 .idea
 tailwind-all.config.js
+.notice
