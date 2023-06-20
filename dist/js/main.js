@@ -3,10 +3,11 @@
 import * as functions from "./_functions.mjs";
 
 const navBtn = document.querySelector("#nav-btn");
-const dropnavbar = document.querySelector("#drop-navbar");
+const dropNavbar = document.querySelector("#drop-navbar");
+const carousel = document.querySelector('#carousel');
 
-navBtn.addEventListener('click',()=>functions.toggleNvabar(navBtn, dropnavbar));
-dropnavbar.querySelectorAll("li").forEach((entry) => entry.addEventListener('click', () => functions.toggleNvabar(navBtn, dropnavbar)));
+navBtn.addEventListener('click',()=>functions.toggleNavbar(navBtn, dropNavbar));
+dropNavbar.querySelectorAll("li").forEach((entry) => entry.addEventListener('click', () => functions.toggleNavbar(navBtn, dropNavbar)));
 
 
-
+functions.slider(carousel);

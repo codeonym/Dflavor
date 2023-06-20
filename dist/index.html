@@ -9,7 +9,7 @@
   <title>DFlavor</title>
 </head>
 <body class="text-slate-600 font-sans min-h-screen relative">
-  <header class="will-change-auto">
+  <header class="will-change-auto px-4">
     <nav class="container flex justify-between items-center mx-auto py-6 px-3">
     <div class="w-48">
       <img src="img/logo.png"  alt="" srcset="">
@@ -55,7 +55,7 @@
       </div>
     </div>
   </section>
-  <section class="w-full mt-96 bg-slate-100 min-h-fit py-32 px:4">
+  <section class="w-full mt-96 bg-slate-100 min-h-fit py-32 px-4">
       <div class="container mx-auto flex flex-wrap items-center justify-center gap-8">
         <div class="w-1/3 relative">
           <img src="./img/about-banner.png" alt="" srcset="">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section class="w-full mt-44 bg-white bg-[url('../img/i-like-food.svg')] bg-scale-down bg-repeat  min-h-fit py-32 px:4">
+    <section class="w-full mt-44 bg-white bg-[url('../img/i-like-food.svg')] bg-scale-down bg-repeat  min-h-fit py-32 px-4">
       <div class="container mx-auto">
         <div class="">
           <h2 class="text-3xl tracking-wider mb-4 font-extrabold p-4 w-fit mx-auto before:inset-x-1/3  relative z-0 before:-z-10 before:absolute before:border-b-8 before:top-full before:rounded-full">Our Flavors <i class="text-emerald-500 fa-solid fa-utensils"></i></h2>
@@ -104,7 +104,7 @@
       </div>
       </div>
     </section>
-    <section class="w-full mt-44 bg-slate-100 min-h-fit py-32 px:4">
+    <section class="w-full mt-44 bg-slate-100 min-h-fit py-32 px-4">
       <div class="container mx-auto">
         <div class="w-full">
           <img class="w-1/2 lg:w-1/3 mx-auto" src="./img/dish02.png" alt="" srcset="">
@@ -209,13 +209,128 @@
         </div>
       </div>
     </section>
-    <section class="w-full mt-44 bg-white bg-[url('../img/i-like-food.svg')] bg-scale-down bg-repeat  min-h-fit py-32 px:4">
+    <section class="w-full mt-44 bg-white bg-[url('../img/i-like-food.svg')] bg-scale-down bg-repeat  min-h-fit py-32 px-4">
       <div class="container mx-auto">
         <div class="">
           <h2 class="text-3xl tracking-wider mb-4 font-extrabold p-4 w-fit mx-auto before:inset-x-1/3  relative z-0 before:-z-10 before:absolute before:border-b-8 before:top-full before:rounded-full">Our Promos <i class="text-emerald-500 fa-solid fa-fire-flame-curved"></i></h2>
           <p class="text-slate-400 font-light leading-snug max-w-lg mx-auto text-justify  normal-case">Discover extraordinary savings on our menu with our enticing restaurant promo deals, bringing you exceptional flavors without compromising on quality.</p>
         </div>
-        
+        <div id="carousel" class="group bg-slate-500 mt-32 rounded-lg flex shadow-lg shadow-slate-400 mx-auto w-full lg:w-1/2 relative">
+            <div class="container overflow-hidden flex">
+              <div data-target="0" class="selected overflow-hidden relative item w-full shrink-0 -z-0">
+              <div class="absolute inset-y-0 left-0 bg-slate-950 z-10 bg-opacity-70 p-6 flex justify-end flex-col w-full md:w-1/2 lg:w-96 -translate-x-full transition group-hover:translate-x-0">
+                <h1 class=" mt-8 text-slate-50 text-3xl font-extrabold tracking-wider">Burger <i class="fa fa-burger"></i></h1>
+                <p class="text-slate-400 leading-snug mt-6 text-justify break-all">
+                  <i class="fa fa-quote-left-alt text-3xl me-2.5 text-slate-300"></i>
+                  Savor the Juicy Bliss! Our mouthwatering burger, made with premium ground beef, topped with melted cheese and a tangy secret sauce, will ignite your taste buds and leave you craving for more. Indulge in burger perfection at our restaurant today!
+                  <i class="fa fa-quote-right-alt text-3xl ms-2.5 text-slate-300"></i>
+                </p>
+                <a href="#" class="text-emerald-500 block border-2 border-emerald-500 py-3 px-8 mt-4 rounded-full ring-4 ring-slate-700 ring-offset-0 w-fit hover:text-slate-50 hover:bg-emerald-600 hover:-translate-y-1 transition">Order Now</a>
+              </div>
+              <div class="p-8 before:absolute before:inset-0 before:bg-[url('../img/banner-3.jpg')] before:-z-10 before:blur-xl">
+                <img class="h-96 object-cover rounded-xl mx-auto shadow-2xl shadow-slate-900" src="./img/banner-3.jpg" alt="">
+              </div>
+            </div>
+            <div data-target="1" class="item relative overflow-hidden w-full shrink-0 -z-0">
+              <div class="absolute inset-y-0 left-0 bg-slate-950 z-10 bg-opacity-70 p-6 flex justify-end flex-col w-full md:w-1/2 lg:w-96 -translate-x-full transition group-hover:translate-x-0">
+                <h1 class=" mt-8 text-slate-50 text-3xl font-extrabold tracking-wider">Pizza <i class="fa fa-pizza-slice"></i></h1>
+                <p class="text-slate-400 leading-snug mt-6 text-justify break-all">
+                  <i class="fa fa-quote-left-alt text-3xl me-2.5 text-slate-300"></i>
+                  Experience Pizza Perfection! Our mouthwatering hand-tossed crust topped with premium ingredients, bubbling cheese, and a secret blend of savory sauces will transport your taste buds to pizza paradise. Satisfy your cravings and indulge in the ultimate pizza delight at our pizzeria today!
+                  <i class="fa fa-quote-right-alt text-3xl ms-2.5 text-slate-300"></i>
+                </p>
+                <a href="#" class="text-emerald-500 block border-2 border-emerald-500 py-3 px-8 mt-4 rounded-full ring-4 ring-slate-700 ring-offset-0 w-fit hover:text-slate-50 hover:bg-emerald-600 hover:-translate-y-1 transition">Order Now</a>
+              </div>
+              <div class="p-8 before:absolute before:inset-0 before:bg-[url('../img/banner-2.jpg')] before:-z-10 before:blur-xl">
+                <img class="h-96 object-cover rounded-xl mx-auto shadow-2xl shadow-slate-900" src="./img/banner-2.jpg" alt="">
+              </div>
+            </div>
+            <div data-target="2" class="item relative overflow-hidden w-full shrink-0 -z-0">
+              <div class="absolute inset-y-0 left-0 bg-slate-950 z-10 bg-opacity-70 p-6 flex justify-end flex-col w-full md:w-1/2 lg:w-96 -translate-x-full transition group-hover:translate-x-0">
+                <h1 class=" mt-8 text-slate-50 text-3xl font-extrabold tracking-wider">Pasta <i class="fa fa-utensils"></i></h1>
+                <p class="text-slate-400 leading-snug mt-6 text-justify break-all">
+                  <i class="fa fa-quote-left-alt text-3xl me-2.5 text-slate-300"></i>
+                  Delight in Pasta Perfection! Our al dente pasta, tossed in a rich and flavorful sauce, combined with fresh herbs and a sprinkle of Parmesan cheese, will transport you to the heart of Italy. Experience a culinary journey and savor the taste of authentic Italian pasta at our restaurant today!
+                  <i class="fa fa-quote-right-alt text-3xl ms-2.5 text-slate-300"></i>
+                </p>
+                <a href="#" class="text-emerald-500 block border-2 border-emerald-500 py-3 px-8 mt-4 rounded-full ring-4 ring-slate-700 ring-offset-0 w-fit hover:text-slate-50 hover:bg-emerald-600 hover:-translate-y-1 transition">Order Now</a>
+              </div>
+              <div class="p-8 before:absolute before:inset-0 before:bg-[url('../img/banner-1.jpg')] before:-z-10 before:blur-xl">
+                <img class="h-96 object-cover rounded-xl mx-auto shadow-2xl shadow-slate-900" src="./img/banner-1.jpg" alt="">
+              </div>
+            </div>
+            </div>
+            <div class="navigation z-10 absolute  bottom-2 right-4 transition-transform translate-y-96 group-hover:translate-y-0 ">
+              <i class=" prev cursor-pointer fa fa-chevron-circle-left text-slate-200/50  hover:text-slate-200/80 transition duration-200 text-lg"></i>
+              <ul class="w-32 inline-flex gap-2.5 justify-center">
+                <li data-target="1" class="w-2 h-2 cursor-pointer rounded-full ring ring-slate-100/50 hover:ring-slate-100/80 transition duration-200  bg-slate-50/50"></li>
+                <li data-target="2" class="w-2 h-2 cursor-pointer rounded-full ring ring-slate-100/50 hover:ring-slate-100/80 transition duration-200 "></li>
+                <li data-target="3" class="w-2 h-2 cursor-pointer rounded-full ring ring-slate-100/50 hover:ring-slate-100/80 transition duration-200 "></li>
+              </ul>
+              <i class="next cursor-pointer fa fa-chevron-circle-right text-slate-200/50 hover:text-slate-200/80 transition duration-200  text-lg"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full mt-44 bg-slate-100  min-h-fit py-32 px-4">
+      <div class="container mx-auto">
+        <div class="">
+          <h2 class="text-3xl tracking-wider mb-4 font-extrabold p-4 w-fit mx-auto before:inset-x-1/3  relative z-0 before:-z-10 before:absolute before:border-b-8 before:top-full before:rounded-full">Our Customers <i class="text-emerald-500 fa-solid fa-comment"></i></h2>
+          <p class="text-slate-400 font-light leading-snug max-w-lg mx-auto text-justify  normal-case">Our customer reviews exude pure satisfaction, with glowing praises like "outstanding," "unforgettable," and "impeccable." From our impeccable service to our delectable cuisine, we consistently exceed expectations, creating memorable dining experiences. Discover the genuine testimonials that showcase why our restaurant is cherished by our valued patrons.</p>
+        </div>
+        <div class=" mx-auto mt-32 flex justify-center space-x-4 space-y-16 flex-wrap ">
+          <div class="max-w-lg shrink-0 h-80 bg-white p-4 rounded-xl shadow-md shadow-slate-200 relative -z-0 pt-16 flex flex-col gap-3 justify-end">
+            <img class="w-24 rounded-full z-10 -top-12 left-1/2 absolute -translate-x-1/2 ring-8 ring-offset-4 ring-slate-100" src="./img/customer-01.png" alt="" srcset="">
+            <h2 class="text-2xl font-bold">A Gastronomic Delight!</h2>
+            <div class="text-yellow-400">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="flex gap-1.5">
+              <i class="fa fa-quote-left-alt text-sm"></i>
+              <p class="text-justify text-slate-500 line-clamp-4">Dining at Dflavor was a culinary revelation with a harmonious symphony of flavors that tantalized my taste buds. The impeccable attention to detail, presentation, and outstanding service enhanced the overall experience.</p> 
+              <i class="self-end fa fa-quote-right-alt text-sm"></i>
+            </div>
+            <h3 class="font-bold">Emma Johnson</h3>
+          </div>
+          <div class="max-w-lg shrink-0 h-80 bg-white p-4 rounded-xl shadow-md shadow-slate-200 relative pt-16 flex flex-col gap-3 justify-end">
+            <img class="w-24 rounded-full absolute -top-12 left-1/2 -translate-x-1/2 ring-8 ring-offset-4 ring-slate-100" src="./img/customer-02.png" alt="" srcset="">
+            <h2 class="text-2xl font-bold">A Culinary Journey of Bliss</h2>
+            <div class="text-yellow-400">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="flex gap-1.5">
+              <i class="fa text-sm fa-quote-left-alt"></i>
+              <p class="text-justify text-slate-500 line-clamp-4">The menu presented an exquisite array of flavors, each dish expertly crafted to perfection. From the first bite to the last, I was transported on a culinary journey of pure bliss. The attention to detail, the artful presentation, and the delightful flavors all combined to create an unparalleled dining experience.</p> 
+              <i class="fa self-end text-sm fa-quote-right-alt"></i>
+            </div>
+            <h3 class="font-bold">Michael Anderson</h3>
+          </div>
+          <div class="max-w-lg shrink-0 h-80 bg-white p-4 rounded-xl shadow-md shadow-slate-200 relative pt-16 flex flex-col gap-3 justify-end">
+            <img class="w-24 rounded-full absolute -top-12 left-1/2 -translate-x-1/2 ring-8 ring-offset-4 ring-slate-100" src="./img/customer-03.png" alt="" srcset="">
+            <h2 class="text-2xl font-bold">A Food Lover's Paradise</h2>
+            <div class="text-yellow-400">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="flex gap-1.5">
+              <i class="fa text-sm fa-quote-left-alt"></i>
+              <p class="text-justify text-slate-500 line-clamp-4">Dining at Dflavor was an absolute delight for a food enthusiast like me. From the moment I entered, the inviting ambiance and warm hospitality set the stage for an exceptional experience. The menu was a revelation, offering a delectable array of flavors that left me in awe.</p> 
+              <i class="fa self-end text-sm fa-quote-right-alt"></i>
+            </div>
+            <h3 class="font-bold">James Davis</h3>
+          </div>
+        </div>
       </div>
     </section>
   <!-- <script src="js/_functions.mjs" type="module"></script> -->

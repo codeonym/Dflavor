@@ -1,4 +1,4 @@
-export function toggleNvabar(navBtn, dropnavbar) { 
+export function toggleNavbar(navBtn, dropNavbar) { 
   console.log("nav bar : ");
   console.log(navBtn);
   const firstSpan = navBtn.querySelector("span:nth-child(1)");
@@ -11,11 +11,79 @@ export function toggleNvabar(navBtn, dropnavbar) {
 
   if (navBtn.classList.contains("open")) {
     navBtn.classList.remove("open");
-    dropnavbar.classList.add('hidden');
+    dropNavbar.classList.add('hidden');
   } else {
     navBtn.classList.add("open");
-    dropnavbar.classList.remove('hidden');
+    dropNavbar.classList.remove('hidden');
   }
 }
+
+export function slider(carousel) {
+
+  const items = carousel.querySelectorAll('.item');
+  const selectedItem = carousel.querySelector('.item.selected');
+  const nextBtn = carousel.querySelector('.navigation .next');
+  const prevBtn = carousel.querySelector('.navigation .prev');
+  const navigationMenu = carousel.querySelectorAll('.navigation ul li');
+
+  let currentIndex = +selectedItem.dataset.target;
+  let itemsLength = items.length;
+  let intervalId = null;
+
+  startInterval();
+
+  nextBtn.addEventListener('click', () => {
+    endInterval();
+    currentIndex = (currentIndex + 1) % itemsLength;
+    updateCarousel(currentIndex);
+  });
+  prevBtn.addEventListener('click', () => {
+    endInterval();
+    currentIndex = (currentIndex - 1 + itemsLength) % itemsLength;
+    updateCarousel(currentIndex);
+  });
+  navigationMenu.forEach((entry) => {
+    entry.addEventListener('click', () => {
+      endInterval();
+      const targetIndex = +entry.dataset.target - 1;
+      updateCarousel(targetIndex);
+    });
+  });
+  function updateCarousel(itemIndex) {
+
+    const carouselContainer =  carousel.querySelector('.container');
+    items.forEach(item => item.classList.remove('selected'));
+    items[itemIndex].classList.add('selected');
+    navigationMenu.forEach((entry) => {
+      if (entry.dataset.target == itemIndex + 1) {
+        navigationMenu.forEach((li) => li.classList.remove('bg-slate-50/50'));
+        entry.classList.add('bg-slate-50/50');
+      }
+    });
+    let itemWidth = carouselContainer.offsetWidth;
+    window.addEventListener('resize', () => {
+      itemWidth = carouselContainer.offsetWidth;
+    });
+    const scrollLeftValue = currentIndex * itemWidth;
+    carouselContainer.scrollTo({
+      left: scrollLeftValue,
+    });
+    startInterval();
+  }
+  
+  function startInterval() {
+    if (intervalId === null) {
+    intervalId = setInterval(()=>nextBtn.click(), 5000);
+  }
+  } 
+
+  function endInterval() {
+    if (intervalId !== null) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+}
+
 
 export * from "./_functions.mjs";
