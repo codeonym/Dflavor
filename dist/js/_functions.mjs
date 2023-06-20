@@ -85,5 +85,36 @@ export function slider(carousel) {
   }
 }
 
+export function rating(form) {
+  const ratingStars = form.querySelectorAll(".rating-star");
+  let rating = 1;
+  console.log(ratingStars);
+
+  ratingStars.forEach((entry) => { 
+
+    entry.addEventListener('click', () => {
+      const ratingInput = form.querySelector("input[name='rating']");
+
+      rating = +entry.dataset.rating;
+      updateStars(rating);
+      ratingInput.value = rating;
+      console.log(ratingInput);
+    });
+    function updateStars(rating) {
+      
+      ratingStars.forEach((entry) => { 
+        entry.classList.remove('fa-regular');
+        entry.classList.remove('text-slate-500');
+        entry.classList.remove('fa-solid');
+        entry.classList.remove('text-yellow-400');
+      });
+
+      for (let i = 0; i < rating; i++){
+        ratingStars[i].classList.add('fa-solid');
+        ratingStars[i].classList.add('text-yellow-400');
+      }
+    }
+  });
+}
 
 export * from "./_functions.mjs";
