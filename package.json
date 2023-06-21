@@ -1,0 +1,28 @@
+{
+  "name": "dflavor",
+  "version": "1.0.0",
+  "description": "A Design for A Fast Food Snack",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiraXdesu/Dflavor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiraXdesu/Dflavor/issues"
+  },
+  "homepage": "https://github.com/kiraXdesu/Dflavor#readme",
+  "devDependencies": {
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0"
+  }
+}
