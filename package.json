@@ -1,0 +1,45 @@
+{
+  "name": "dflavor",
+  "version": "1.0.0",
+  "description": "A Design for A Fast Food Snack",
+  "main": "index.js",
+  "scripts": {
+    "tailwind-build": "tailwindcss -i ./src/styles/input.css -o ./dist/css/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/main.css --watch",
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiraXdesu/Dflavor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiraXdesu/Dflavor/issues"
+  },
+  "homepage": "https://github.com/kiraXdesu/Dflavor#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "gsap": "^3.12.1",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^8.5.1",
+    "style-loader": "^3.3.3",
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss": "^3.3.2",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0"
+  }
+}
