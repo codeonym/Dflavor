@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiraXdesu/Dflavor.git"
+    "url": "git+https://github.com/codeonym/Dflavor.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "codeonym",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kiraXdesu/Dflavor/issues"
+    "url": "https://github.com/codeonym/Dflavor/issues"
   },
-  "homepage": "https://github.com/kiraXdesu/Dflavor#readme",
+  "homepage": "https://github.com/codeonym/Dflavor#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
